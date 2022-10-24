@@ -1,4 +1,12 @@
 def FlattenList( l ):
+    lst=[]
+    for i in l:
+        if type(i)==int:
+            lst.append(i)
+        elif type(i)==list:
+            for j in i:
+                lst.append(j)
+    return lst
 
 
 
